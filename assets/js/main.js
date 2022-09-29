@@ -14,11 +14,11 @@ const scoreDiv = document.getElementById("scoreContainer");
 // quiz
 let questions = [
   {
-    question: "Apakah ini simbol dari HTML5?",
-    imgSrc: "/assets/img/html.png",
-    choiceA: "Benar",
-    choiceB: "Salah",
-    choiceC: "Mungkin",
+    question: "Siapakah dia?",
+    imgSrc: "/assets/img/hitler.jpg",
+    choiceA: "Adolf Hitler",
+    choiceB: "Ir.Soekarno",
+    choiceC: "Dr.Soetomo",
     correct: "A",
   },
   {
