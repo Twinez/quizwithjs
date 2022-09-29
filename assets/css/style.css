@@ -33,14 +33,14 @@ body {
   color: lightseagreen;
 }
 
-#qImg {
+#question-image {
   width: 200px;
   height: 200px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
-#qImg img {
+#question-image img {
   width: 200px;
   height: 200px;
   border-top-left-radius: 5px;
@@ -92,14 +92,14 @@ body {
 #counter {
   font-size: 3em;
 }
-#btimeGauge {
+#bg-time-gauge {
   width: 150px;
   height: 10px;
   border-radius: 10px;
   background-color: lightgray;
   margin-left: 25px;
 }
-#timeGauge {
+#time-gauge {
   height: 10px;
   border-radius: 10px;
   background-color: mediumseagreen;
@@ -123,7 +123,7 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
-#scoreContainer {
+#score-container {
   margin: 20px auto;
   background-color: white;
   opacity: 0.8;
@@ -134,12 +134,12 @@ body {
   position: relative;
   display: none;
 }
-#scoreContainer img {
+#score-container img {
   position: absolute;
   top: 100px;
   left: 325px;
 }
-#scoreContainer p {
+#score-container p {
   position: absolute;
   display: block;
   width: 59px;
