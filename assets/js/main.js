@@ -47,3 +47,10 @@ function startQuiz() {
   renderCounter();
   TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s
 }
+
+// render progress
+function renderProgress() {
+  for (let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
+    progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
+  }
+}
