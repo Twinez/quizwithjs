@@ -75,3 +75,35 @@ function renderCounter() {
     }
   }
 }
+
+// checkAnwer
+function checkAnswer(answer) {
+  if (answer == questions[runningQuestion].correct) {
+    // answer is correct
+    score++;
+    // change progress color to green
+    answerIsCorrect();
+  } else {
+    // answer is wrong
+    // change progress color to red
+    answerIsWrong();
+  }
+  count = 0;
+  if (runningQuestion < lastQuestion) {
+    runningQuestion++;
+    renderQuestion();
+  } else {
+    // end the quiz and show the score
+    clearInterval(TIMER);
+    scoreRender();
+  }
+}
+
+// answer is correct
+function answerIsCorrect() {
+  document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+}
+// answer is Wrong
+function answerIsWrong() {
+  document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+}
