@@ -37,3 +37,13 @@ function renderQuestion() {
   choiceC.innerHTML = q.choiceC;
 }
 start.addEventListener("click", startQuiz);
+
+// start quiz
+function startQuiz() {
+  start.style.display = "none";
+  renderQuestion();
+  quiz.style.display = "block";
+  renderProgress();
+  renderCounter();
+  TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s
+}
