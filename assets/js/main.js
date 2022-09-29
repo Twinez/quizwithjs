@@ -1,3 +1,4 @@
+// quiz
 let questions = [
   {
     question: "Apakah ini simbol dari HTML5?",
@@ -24,3 +25,15 @@ let questions = [
     correct: "C",
   },
 ];
+
+// render a question
+function renderQuestion() {
+  let q = questions[runningQuestion];
+
+  question.innerHTML = "<p>" + q.question + "</p>";
+  qImg.innerHTML = "<img src=" + q.imgSrc + ">";
+  choiceA.innerHTML = q.choiceA;
+  choiceB.innerHTML = q.choiceB;
+  choiceC.innerHTML = q.choiceC;
+}
+start.addEventListener("click", startQuiz);
