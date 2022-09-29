@@ -1,7 +1,7 @@
 body {
   font-size: 20px;
   font-family: monospace;
-  background-color: pink;
+  background-color: rgb(57, 57, 57);
 }
 
 #container {
@@ -19,12 +19,13 @@ body {
   word-break: break-all;
   width: 250px;
   height: 50px;
+  padding: 10px 0px 0px 0px;
   border: 2px solid lightgrey;
   text-align: center;
   cursor: pointer;
   position: absolute;
   left: 230px;
-  top: 50px;
+  top: 110px;
   color: lightgrey;
 }
 #start:hover {
