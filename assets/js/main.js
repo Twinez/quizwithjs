@@ -54,3 +54,24 @@ function renderProgress() {
     progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
   }
 }
+
+// counter render
+function renderCounter() {
+  if (count <= questionTime) {
+    counter.innerHTML = count;
+    timeGauge.style.width = count * gaugeUnit + "px";
+    count++;
+  } else {
+    count = 0;
+    // change progress color to red
+    answerIsWrong();
+    if (runningQuestion < lastQuestion) {
+      runningQuestion++;
+      renderQuestion();
+    } else {
+      // end the quiz and show the score
+      clearInterval(TIMER);
+      scoreRender();
+    }
+  }
+}
